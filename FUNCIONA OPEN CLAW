@@ -1,0 +1,311 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "gpuType": "T4",
+      "authorship_tag": "ABX9TyOu/zrSBokamKaZXDFcN/3o",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    },
+    "accelerator": "GPU"
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/saucedomorelderlis-rgb/APP_INVENTARIO_NATIVO/blob/main/FUNCIONA%20OPEN%20CLAW\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lahcBWpE82QW",
+        "outputId": "03254cf9-285f-489a-bb38-9cf092e40004"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\u001b[38;2;136;146;176mPreparing installer interface...\u001b[0m\n",
+            "\u001b[38;2;255;77;77m\u001b[1m\n",
+            "  🦞 OpenClaw Installer\n",
+            "\u001b[0m\u001b[38;2;136;146;176m  Welcome to the command line: where dreams compile and confidence segfaults.\u001b[0m\n",
+            "\n",
+            "\u001b[38;2;0;229;204m✓\u001b[0m Detected: linux\n",
+            "\n",
+            "\u001b[38;2;255;77;77m\u001b[1mInstall plan\u001b[0m\n",
+            "\u001b[38;2;90;100;128mOS:\u001b[0m linux\n",
+            "\u001b[38;2;90;100;128mInstall method:\u001b[0m npm\n",
+            "\u001b[38;2;90;100;128mRequested version:\u001b[0m latest\n",
+            "\n",
+            "\u001b[38;2;255;77;77m\u001b[1m[1/3] Preparing environment\u001b[0m\n",
+            "\u001b[38;2;90;100;128m·\u001b[0m Node.js v20.19.0 found, upgrading to a supported version\n",
+            "\u001b[38;2;90;100;128m·\u001b[0m Installing Linux build tools (make/g++/cmake/python3)\n",
+            "\u001b[38;2;90;100;128m·\u001b[0m Updating package index\n",
+            "\u001b[38;2;90;100;128m·\u001b[0m Installing build tools\n",
+            "\u001b[38;2;0;229;204m✓\u001b[0m Build tools installed\n",
+            "\u001b[38;2;90;100;128m·\u001b[0m Installing Node.js via NodeSource\n",
+            "\u001b[38;2;90;100;128m·\u001b[0m Downloading NodeSource setup script\n",
+            "\u001b[38;2;90;100;128m·\u001b[0m Configuring NodeSource repository\n",
+            "\u001b[38;2;90;100;128m·\u001b[0m Installing Node.js\n",
+            "\u001b[38;2;0;229;204m✓\u001b[0m Node.js v24.22.0 installed\n",
+            "\u001b[38;2;90;100;128m·\u001b[0m Active Node.js: v24.22.0 (/usr/bin/node)\n",
+            "\u001b[38;2;90;100;128m·\u001b[0m Active npm: 11.19.1 (/usr/bin/npm)\n",
+            "\n",
+            "\u001b[38;2;255;77;77m\u001b[1m[2/3] Installing OpenClaw\u001b[0m\n",
+            "\u001b[38;2;0;229;204m✓\u001b[0m Git already installed\n",
+            "\u001b[38;2;90;100;128m·\u001b[0m Installing OpenClaw v2026.10.4\n",
+            "\u001b[38;2;90;100;128m·\u001b[0m Installing OpenClaw package\n",
+            "\u001b[38;2;0;229;204m✓\u001b[0m OpenClaw npm package installed\n",
+            "\u001b[38;2;90;100;128m·\u001b[0m Published openclaw bin link at /usr/bin/openclaw\n",
+            "\u001b[38;2;0;229;204m✓\u001b[0m OpenClaw installed\n",
+            "\n",
+            "\u001b[38;2;255;77;77m\u001b[1m[3/3] Finalizing setup\u001b[0m\n",
+            "\n",
+            "\u001b[38;2;0;229;204m\u001b[1m🦞 OpenClaw installed successfully (2026.10.4)!\u001b[0m\n",
+            "\u001b[38;2;90;100;128mHome sweet home. Don't worry, I won't rearrange the furniture.\u001b[0m\n",
+            "\n",
+            "\u001b[38;2;90;100;128m·\u001b[0m Starting setup\n",
+            "\n",
+            "\u001b[38;2;90;100;128m·\u001b[0m No TTY; run openclaw onboard to finish setup\n",
+            "\n",
+            "FAQ: \u001b[38;2;136;146;176mhttps://docs.openclaw.ai/start/faq\u001b[0m\n"
+          ]
+        }
+      ],
+      "source": [
+        "!curl -sSf https://openclaw.ai/install.sh | bash"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1c775a10",
+        "outputId": "0a74c699-cb53-4ca3-c144-201575e5b1f6"
+      },
+      "source": [
+        "!sudo apt-get update && sudo apt-get install -y zstd\n",
+        "!curl -fsSL https://ollama.com/install.sh | sh"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\r0% [Working]\r            \rHit:1 https://cloud.r-project.org/bin/linux/ubuntu noble-cran40/ InRelease\n",
+            "\r0% [Connecting to r2u.stat.illinois.edu] [Connected to developer.download.nvidi\r                                                                               \rGet:2 https://cli.github.com/packages stable InRelease [3,917 B]\n",
+            "\r0% [Connecting to r2u.stat.illinois.edu] [Waiting for headers] [Connecting to p\r0% [Connecting to r2u.stat.illinois.edu] [Waiting for headers] [Connecting to p\r                                                                               \rHit:3 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  InRelease\n",
+            "\r0% [Connecting to r2u.stat.illinois.edu] [Connecting to ppa.launchpadcontent.ne\r                                                                               \rHit:4 https://deb.nodesource.com/node_24.x nodistro InRelease\n",
+            "Hit:5 http://archive.ubuntu.com/ubuntu noble InRelease\n",
+            "Hit:6 http://archive.ubuntu.com/ubuntu noble-updates InRelease\n",
+            "Hit:7 http://archive.ubuntu.com/ubuntu noble-backports InRelease\n",
+            "Hit:8 http://security.ubuntu.com/ubuntu noble-security InRelease\n",
+            "Hit:9 https://r2u.stat.illinois.edu/ubuntu noble InRelease\n",
+            "Hit:10 https://ppa.launchpadcontent.net/deadsnakes/ppa/ubuntu noble InRelease\n",
+            "Hit:11 https://ppa.launchpadcontent.net/graphics-drivers/ppa/ubuntu noble InRelease\n",
+            "Fetched 3,917 B in 1s (4,638 B/s)\n",
+            "Reading package lists... Done\n",
+            "W: Skipping acquire of configured file 'main/source/Sources' as repository 'https://r2u.stat.illinois.edu/ubuntu noble InRelease' does not seem to provide it (sources.list entry misspelt?)\n",
+            "Reading package lists... Done\n",
+            "Building dependency tree... Done\n",
+            "Reading state information... Done\n",
+            "The following NEW packages will be installed:\n",
+            "  zstd\n",
+            "0 upgraded, 1 newly installed, 0 to remove and 89 not upgraded.\n",
+            "Need to get 644 kB of archives.\n",
+            "After this operation, 1,845 kB of additional disk space will be used.\n",
+            "Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 zstd amd64 1.5.5+dfsg2-2build1.1 [644 kB]\n",
+            "Fetched 644 kB in 1s (960 kB/s)\n",
+            "debconf: unable to initialize frontend: Dialog\n",
+            "debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 79, <STDIN> line 1.)\n",
+            "debconf: falling back to frontend: Readline\n",
+            "debconf: unable to initialize frontend: Readline\n",
+            "debconf: (This frontend requires a controlling tty.)\n",
+            "debconf: falling back to frontend: Teletype\n",
+            "dpkg-preconfigure: unable to re-open stdin: \n",
+            "Selecting previously unselected package zstd.\n",
+            "(Reading database ... 133215 files and directories currently installed.)\n",
+            "Preparing to unpack .../zstd_1.5.5+dfsg2-2build1.1_amd64.deb ...\n",
+            "Unpacking zstd (1.5.5+dfsg2-2build1.1) ...\n",
+            "Setting up zstd (1.5.5+dfsg2-2build1.1) ...\n",
+            "Processing triggers for man-db (2.12.0-4build2) ...\n",
+            ">>> Cleaning up old version at /usr/local/lib/ollama\n",
+            ">>> Installing ollama to /usr/local\n",
+            ">>> Downloading ollama-linux-amd64.tar.zst\n",
+            "######################################################################## 100.0%\n",
+            ">>> Creating ollama user...\n",
+            ">>> Adding ollama user to video group...\n",
+            ">>> Adding current user to ollama group...\n",
+            ">>> Creating ollama systemd service...\n",
+            "\u001b[1m\u001b[31mWARNING:\u001b[m systemd is not running\n",
+            "\u001b[1m\u001b[31mWARNING:\u001b[m Unable to detect NVIDIA/AMD GPU. Install lspci or lshw to automatically detect and install GPU dependencies.\n",
+            ">>> The Ollama API is now available at 127.0.0.1:11434.\n",
+            ">>> Install complete. Run \"ollama\" from the command line.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "47f6684a",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 106
+        },
+        "outputId": "2ba6368a-57cc-469a-eec3-c56e8a2485e9"
+      },
+      "source": [],
+      "execution_count": 35,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "invalid decimal literal (1625359611.py, line 7)",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"/tmp/ipykernel_1645/1625359611.py\"\u001b[0;36m, line \u001b[0;32m7\u001b[0m\n\u001b[0;31m    ollama pull qwen2.5-coder:7b\u001b[0m\n\u001b[0m                              ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid decimal literal\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 1. Instalar dependencia requerida zstd\n",
+        "!sudo apt-get update && sudo apt-get install -y zstd\n",
+        "\n",
+        "# 2. Descargar e instalar Ollama\n",
+        "!curl -fsSL https://ollama.com/install.sh | sh\n",
+        "\n",
+        "# 3. Iniciar el servicio de Ollama en segundo plano\n",
+        "import subprocess\n",
+        "import time\n",
+        "\n",
+        "print(\"Iniciando el servidor de Ollama...\")\n",
+        "process = subprocess.Popen([\"ollama\", \"serve\"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)\n",
+        "time.sleep(5)\n",
+        "\n",
+        "# 4. Descargar el modelo de código local\n",
+        "!ollama pull qwen2.5-coder:7b"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "os8OXln-PEmP",
+        "outputId": "93e9e933-53a2-410d-b6e0-51c647c35088"
+      },
+      "execution_count": 36,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\r0% [Working]\r            \rHit:1 https://cloud.r-project.org/bin/linux/ubuntu noble-cran40/ InRelease\n",
+            "\r0% [Connecting to r2u.stat.illinois.edu] [Waiting for headers] [Connecting to p\r                                                                               \rGet:2 https://cli.github.com/packages stable InRelease [3,917 B]\n",
+            "\r0% [Connecting to r2u.stat.illinois.edu] [Waiting for headers] [Connecting to p\r                                                                               \rHit:3 https://deb.nodesource.com/node_24.x nodistro InRelease\n",
+            "\r0% [Connecting to r2u.stat.illinois.edu (192.17.190.167)] [Waiting for headers]\r                                                                               \rHit:4 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  InRelease\n",
+            "\r0% [Connecting to r2u.stat.illinois.edu (192.17.190.167)] [Connected to ppa.lau\r                                                                               \rGet:5 https://ngrok-agent.s3.amazonaws.com buster InRelease [20.3 kB]\n",
+            "Hit:6 http://archive.ubuntu.com/ubuntu noble InRelease\n",
+            "Hit:7 http://security.ubuntu.com/ubuntu noble-security InRelease\n",
+            "Hit:8 https://r2u.stat.illinois.edu/ubuntu noble InRelease\n",
+            "Hit:9 http://archive.ubuntu.com/ubuntu noble-updates InRelease\n",
+            "Err:5 https://ngrok-agent.s3.amazonaws.com buster InRelease\n",
+            "  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 0E61D3BBAAEE37FE\n",
+            "Hit:10 http://archive.ubuntu.com/ubuntu noble-backports InRelease\n",
+            "Hit:11 https://ppa.launchpadcontent.net/deadsnakes/ppa/ubuntu noble InRelease\n",
+            "Hit:12 https://ppa.launchpadcontent.net/graphics-drivers/ppa/ubuntu noble InRelease\n",
+            "Reading package lists... Done\n",
+            "W: GPG error: https://ngrok-agent.s3.amazonaws.com buster InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 0E61D3BBAAEE37FE\n",
+            "E: The repository 'https://ngrok-agent.s3.amazonaws.com buster InRelease' is not signed.\n",
+            "N: Updating from such a repository can't be done securely, and is therefore disabled by default.\n",
+            "N: See apt-secure(8) manpage for repository creation and user configuration details.\n",
+            "W: Skipping acquire of configured file 'main/source/Sources' as repository 'https://r2u.stat.illinois.edu/ubuntu noble InRelease' does not seem to provide it (sources.list entry misspelt?)\n",
+            ">>> Cleaning up old version at /usr/local/lib/ollama\n",
+            ">>> Installing ollama to /usr/local\n",
+            ">>> Downloading ollama-linux-amd64.tar.zst\n",
+            "######################################################################## 100.0%\n",
+            ">>> Adding ollama user to video group...\n",
+            ">>> Adding current user to ollama group...\n",
+            ">>> Creating ollama systemd service...\n",
+            "\u001b[1m\u001b[31mWARNING:\u001b[m systemd is not running\n",
+            "\u001b[1m\u001b[31mWARNING:\u001b[m Unable to detect NVIDIA/AMD GPU. Install lspci or lshw to automatically detect and install GPU dependencies.\n",
+            ">>> The Ollama API is now available at 127.0.0.1:11434.\n",
+            ">>> Install complete. Run \"ollama\" from the command line.\n",
+            "Iniciando el servidor de Ollama...\n",
+            "\u001b[?2026h\u001b[?25l\u001b[1G\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G\u001b[?25h\u001b[?2026l\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "e31e69e4",
+        "outputId": "2f8ac39b-2735-40d6-deb4-fa73d8857736"
+      },
+      "source": [
+        "import subprocess\n",
+        "import time\n",
+        "import socket\n",
+        "import requests\n",
+        "\n",
+        "# 1. Asegurar que cualquier proceso previo de ollama esté cerrado para evitar conflictos\n",
+        "!pkill ollama || true\n",
+        "\n",
+        "# 2. Iniciar el servidor de Ollama y redirigir logs a un archivo local\n",
+        "print(\"Iniciando el servidor de Ollama en segundo plano...\")\n",
+        "with open(\"ollama.log\", \"w\") as log_file:\n",
+        "    process = subprocess.Popen([\"ollama\", \"serve\"], stdout=log_file, stderr=log_file, close_fds=True)\n",
+        "\n",
+        "# 3. Esperar y verificar activamente si el servicio está levantado en el puerto 11434\n",
+        "for i in range(10):\n",
+        "    try:\n",
+        "        response = requests.get(\"http://localhost:11434/\")\n",
+        "        if response.status_code == 200:\n",
+        "            print(\"✓ ¡Ollama está activo y respondiendo correctamente en segundo plano!\")\n",
+        "            break\n",
+        "    except requests.exceptions.ConnectionError:\n",
+        "        pass\n",
+        "    time.sleep(2)\n",
+        "else:\n",
+        "    print(\"⚠ El servidor está tardando en responder. Revisa 'ollama.log' si hay inconvenientes.\")\n"
+      ],
+      "execution_count": 38,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Iniciando el servidor de Ollama en segundo plano...\n",
+            "✓ ¡Ollama está activo y respondiendo correctamente en segundo plano!\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
